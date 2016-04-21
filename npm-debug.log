@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/vladimirromanov/Projects/Recipes',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/vladimirromanov/.npm/recipes-front/1.1.0/package.tgz not in flight; packing
+9 info lifecycle recipes-front@1.1.0~prepublish: recipes-front@1.1.0
+10 silly lifecycle recipes-front@1.1.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/vladimirromanov/.npm/recipes-front/1.1.0/package.tgz',
+11 verbose tar pack   '/Users/vladimirromanov/Projects/Recipes' ]
+12 verbose tarball /Users/vladimirromanov/.npm/recipes-front/1.1.0/package.tgz
+13 verbose folder /Users/vladimirromanov/Projects/Recipes
+14 verbose addLocalTarball adding from inside cache /Users/vladimirromanov/.npm/recipes-front/1.1.0/package.tgz
+15 silly cache afterAdd recipes-front@1.1.0
+16 verbose afterAdd /Users/vladimirromanov/.npm/recipes-front/1.1.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/vladimirromanov/.npm/recipes-front/1.1.0/package/package.json written
+18 silly publish { name: 'recipes-front',
+18 silly publish   version: '1.1.0',
+18 silly publish   description: '',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'https://github.com/romanovtoday/Recipes.git' },
+18 silly publish   author: '',
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/romanovtoday/Recipes/issues' },
+18 silly publish   homepage: 'https://github.com/romanovtoday/Recipes',
+18 silly publish   gitHead: 'c7c216dfad402eb2b4b597a56e2f0a06574f6b1f',
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   _id: 'recipes-front@1.1.0',
+18 silly publish   _shasum: '9f168b738d087e72e30d5cf1971ef3aed4f5c977',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name recipes-front
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/recipes-front
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/vladimirromanov/.npm/recipes-front/1.1.0/package.tgz
+26 verbose stack Error: auth required for publishing
+26 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+26 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:137:14
+26 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/npm/lib/utils/map-to-registry.js:55:3)
+26 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:106:3)
+26 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+26 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+26 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+26 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+26 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:72:5
+26 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+27 verbose cwd /Users/vladimirromanov/Projects/Recipes
+28 error Darwin 15.2.0
+29 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+30 error node v5.4.0
+31 error npm  v3.3.12
+32 error code ENEEDAUTH
+33 error need auth auth required for publishing
+33 error need auth You need to authorize this machine using `npm adduser`
+34 verbose exit [ 1, true ]
